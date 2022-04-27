@@ -1,0 +1,198 @@
+html {
+    height: 100%;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
+
+// Typography
+
+body {
+    background-color: $violet;
+    background-image: url(/assets/background-stars.svg);
+    margin: 0;
+    padding: 0;
+    font-family: 'Spartan', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.563rem;
+    z-index: 0;
+    color: $white;
+}
+
+
+h1 {
+    font-family: 'Antonio', sans-serif;
+    font-size: 5rem;
+    line-height: 6.438rem;
+}
+
+.header_one {
+    font-family: 'Antonio', sans-serif;
+    font-size: 5rem;
+    line-height: 6.438rem;
+}
+
+h2 {
+    font-family: 'Antonio', sans-serif;
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+    font-weight: 400;
+    letter-spacing: -0.009rem;
+    text-transform: uppercase;
+}
+
+.header_two {
+    font-family: 'Antonio', sans-serif;
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+    letter-spacing: -0.009rem;
+    text-transform: uppercase;
+}
+
+.h3 {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 1.563rem;
+    letter-spacing: 0.163rem;
+    text-transform: uppercase;
+}
+
+.header_three {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 1.563rem;
+    letter-spacing: 0.163rem;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 0.688rem;
+    line-height: 1.563rem;
+    letter-spacing: 0.063rem;
+    text-transform: uppercase;
+}
+
+.header_four {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 0.688rem;
+    line-height: 1.563rem;
+    letter-spacing: 0.063rem;
+    text-transform: uppercase;
+}
+
+.h2__mobile {
+    font-family: 'Antonio', sans-serif;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    letter-spacing: -0.066rem;
+    text-transform: uppercase;
+}
+
+// Buttons
+
+.default__btn {
+    width: 350px;
+    height: 48px;
+    text-align: left;
+
+    .btn__number { 
+        margin-right: 28px;
+    }
+}
+
+
+// HELPERS
+
+// Container
+
+.container {
+    max-width: 90rem;
+    margin: 0 auto;
+
+    // Padding All
+
+    &--pall {
+        padding-top: 1.625rem;
+        padding-right: 1rem;
+        padding-bottom: 1.625rem;
+        padding-left: 1rem;
+    }
+}
+
+// Flex 
+
+.flex {
+    display: flex;
+
+    &-jc-sb {
+        justify-content: space-between;
+    }
+
+    &-jc-c {
+        justify-content: center;
+    }
+
+    &-ai-c {
+        align-items: center;
+    }
+}
+
+// Hide
+
+.hidden {
+    display: none;
+}
+
+// Animations
+
+.fade-in {
+    animation: fadein 2s;
+    -moz-animation: fadein 1.5s; /* Firefox */
+    -webkit-animation: fadein 1.5s; /* Safari and Chrome */
+    -o-animation: fadein 1.5s; /* Opera */
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity:1;
+        transform: translateY(0px);
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,285 @@
+html {
+  height: 100%;
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  background-color: #070724;
+  background-image: url(/assets/background-stars.svg);
+  margin: 0;
+  padding: 0;
+  font-family: 'Spartan', sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.563rem;
+  z-index: 0;
+  color: white;
+}
+
+h1 {
+  font-family: 'Antonio', sans-serif;
+  font-size: 5rem;
+  line-height: 6.438rem;
+}
+
+.header_one {
+  font-family: 'Antonio', sans-serif;
+  font-size: 5rem;
+  line-height: 6.438rem;
+}
+
+h2 {
+  font-family: 'Antonio', sans-serif;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  font-weight: 400;
+  letter-spacing: -0.009rem;
+  text-transform: uppercase;
+}
+
+.header_two {
+  font-family: 'Antonio', sans-serif;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  letter-spacing: -0.009rem;
+  text-transform: uppercase;
+}
+
+.h3 {
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1.563rem;
+  letter-spacing: 0.163rem;
+  text-transform: uppercase;
+}
+
+.header_three {
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1.563rem;
+  letter-spacing: 0.163rem;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 0.688rem;
+  line-height: 1.563rem;
+  letter-spacing: 0.063rem;
+  text-transform: uppercase;
+}
+
+.header_four {
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 0.688rem;
+  line-height: 1.563rem;
+  letter-spacing: 0.063rem;
+  text-transform: uppercase;
+}
+
+.h2__mobile {
+  font-family: 'Antonio', sans-serif;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  letter-spacing: -0.066rem;
+  text-transform: uppercase;
+}
+
+.default__btn {
+  width: 350px;
+  height: 48px;
+  text-align: left;
+}
+
+.default__btn .btn__number {
+  margin-right: 28px;
+}
+
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.container--pall {
+  padding-top: 1.625rem;
+  padding-right: 1rem;
+  padding-bottom: 1.625rem;
+  padding-left: 1rem;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.fade-in {
+  animation: fadein 2s;
+  -moz-animation: fadein 1.5s;
+  /* Firefox */
+  -webkit-animation: fadein 1.5s;
+  /* Safari and Chrome */
+  -o-animation: fadein 1.5s;
+  /* Opera */
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.header {
+  position: relative;
+  z-index: 1;
+  height: 68px;
+  display: inline;
+}
+
+.header nav {
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  font-family: 'Antonio', sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.header.nav__logo {
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+.header__menu > span {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background-color: white;
+}
+
+.header__menu > span:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.header .navtab {
+  height: 68px;
+  border-top: 1px solid #838391;
+  border-bottom: 1px solid #838391;
+}
+
+.header .navtab > span {
+  font-size: 9px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #838391;
+  cursor: pointer;
+}
+
+.header .navtab > span:hover {
+  color: white;
+  border-bottom: 4px solid #419ebb;
+}
+
+.planet__image {
+  display: block;
+  margin: auto;
+  position: relative;
+  background-image: url("/assets/planet-mercury.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 131px;
+  width: 131px;
+  margin-top: 5.938rem;
+  margin-bottom: 5.313rem;
+}
+
+.planet__structure {
+  display: block;
+  margin: auto;
+  position: relative;
+  background-image: url("/assets/planet-mercury-internal.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 131px;
+  width: 131px;
+  margin-top: 5.938rem;
+  margin-bottom: 5.313rem;
+}
+
+.planet__surface {
+  margin: auto;
+  position: relative;
+  background-image: url("/assets/geology-mercury.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100px;
+  width: 100px;
+  margin-top: -8.313rem;
+}
+
+.planet__about {
+  text-align: center;
+}
+
+.planet__rotation, .planet__revolution, .planet__radius, .planet__temp {
+  padding: 16px 24px 16px 24px;
+  border: 1px solid #38384f;
+  margin-bottom: 8px;
+}
+/*# sourceMappingURL=style.css.map */
