@@ -42,17 +42,17 @@ mercury_overview.addEventListener('click', function(){
 
       function remove(){
         mercury_image.classList.remove('fade-in');
-        mercury_info.classList.remove('fade-in');
-        mercury_title.classList.remove('fade-in');
+        mercury_info.classList.remove('text-fade');
+        mercury_title.classList.remove('text-fade');
       }
       
       mercury_info.innerHTML = mercury_data.overview.content;
       mercury_image.classList.remove(...mercury_image.classList);
       mercury_image.classList.add('planet__image');
-      setTimeout(remove, 1200);
+      setTimeout(remove, 1400);
       mercury_image.classList.add('fade-in');
-      mercury_info.classList.add('fade-in');
-      mercury_title.classList.add('fade-in');
+      mercury_info.classList.add('text-fade');
+      mercury_title.classList.add('text-fade');
       mercury_geology.classList.add('hidden');
     
 });
@@ -62,13 +62,16 @@ mercury_structure.addEventListener('click', function(){
     function remove(){
       mercury_image.classList.remove('fade-in');
       mercury_info.classList.remove('fade-in');
+      mercury_info.classList.remove('text-fade');
+      mercury_title.classList.remove('text-fade')
     }
     
     mercury_info.innerHTML = mercury_data.structure.content;
     mercury_image.classList.add('planet__structure');
     mercury_image.classList.add('fade-in');
-    mercury_info.classList.add('fade-in');
-    setTimeout(remove, 1200);
+    setTimeout(remove, 1400);
+    mercury_info.classList.add('text-fade');
+    mercury_title.classList.add('text-fade');
     mercury_geology.classList.add('hidden');
 });
 
@@ -76,15 +79,17 @@ mercury_surface.addEventListener('click', function(){
 
   function remove(){
     mercury_image.classList.remove('fade-in');
-    mercury_info.classList.remove('fade-in');
+    mercury_info.classList.remove('text-fade');
+    mercury_title.classList.remove('text-fade')
     mercury_geology.classList.remove('fade-in');
   }
 
     mercury_info.innerHTML = mercury_data.geology.content;
     mercury_image.classList.add('planet__image');
     mercury_image.classList.add('fade-in');
-    mercury_info.classList.add('fade-in');
     mercury_geology.classList.add('fade-in');
-    setTimeout(remove, 1200);
+    setTimeout(remove, 1400);
+    mercury_info.classList.add('text-fade');
+    mercury_title.classList.add('text-fade');
     mercury_geology.classList.remove('hidden');
 });

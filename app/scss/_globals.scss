@@ -153,25 +153,46 @@ h4 {
     display: none;
 }
 
-// Animations
+// ---------- //
+// Animations //
+// ---------- //
+
+// Fade In
 
 .fade-in {
-    animation: fadein 2s;
+    animation: fadein 1.2s;
     -moz-animation: fadein 1.5s; /* Firefox */
     -webkit-animation: fadein 1.5s; /* Safari and Chrome */
     -o-animation: fadein 1.5s; /* Opera */
 }
 
-@keyframes fadein {
+.text-fade {
+    animation: textfadein 1.2s;
+}
+
+
+@keyframes textfadein {
     from {
         opacity:0;
-        transform: translateY(-30px);
+        transform: scale(0.75);
     }
     to {
         opacity:1;
-        transform: translateY(0px);
+        transform: scale(1);
     }
 }
+
+@keyframes fadein {
+    from {
+        opacity:0;
+        transform: translateY(-30px) rotate(90deg) scale(0.5);
+    }
+    to {
+        opacity:1;
+        transform: translateY(0px) rotate(0deg) scale(1);
+    }
+}
+
 @-moz-keyframes fadein { /* Firefox */
     from {
         opacity:0;
@@ -180,6 +201,7 @@ h4 {
         opacity:1;
     }
 }
+
 @-webkit-keyframes fadein { /* Safari and Chrome */
     from {
         opacity:0;
@@ -188,6 +210,7 @@ h4 {
         opacity:1;
     }
 }
+
 @-o-keyframes fadein { /* Opera */
     from {
         opacity:0;
