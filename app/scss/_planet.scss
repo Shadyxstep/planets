@@ -45,6 +45,15 @@
         text-align: center;
     }
 
+    &__stats {
+        color: $lightGray;
+    }
+
+    .planets__statsvalue {
+        color: $white;
+    }
+
+
     &__rotation, 
     &__revolution,
     &__radius,

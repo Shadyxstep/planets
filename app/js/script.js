@@ -71,7 +71,6 @@ mercury_structure.addEventListener('click', function(){
     mercury_image.classList.add('fade-in');
     setTimeout(remove, 1400);
     mercury_info.classList.add('text-fade');
-    mercury_title.classList.add('text-fade');
     mercury_geology.classList.add('hidden');
 });
 
@@ -90,6 +89,5 @@ mercury_surface.addEventListener('click', function(){
     mercury_geology.classList.add('fade-in');
     setTimeout(remove, 1400);
     mercury_info.classList.add('text-fade');
-    mercury_title.classList.add('text-fade');
     mercury_geology.classList.remove('hidden');
 });

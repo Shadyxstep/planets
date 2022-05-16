@@ -15,15 +15,29 @@
   <!-- Nav Bar -->
 
   <header class="header">
-    <nav class="container container--pall flex flex-jc-sb flex-ai-c">
+    <nav class="container container--plr flex flex-jc-sb flex-ai-c">
       <span class="h2__mobile">The Planets</span>
 
-      <a id="btnHamburger" href="#" class="header__menu">
+      <a id="btnHamburger" href="#" class="header__menu" onclick="openNav();">
         <span></span>
         <span></span>
         <span></span>
       </a>
+
+      <div id="mobileNav" class="overlay">
+        <div class="overlay-content">
+          <a href="#" id="mer"><div class="mercury-circle"></div>Mercury<span class="icon-chev" id="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>      
+          <a href="#" id="ven"><div class="venus-circle"></div>Venus<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
+          <a href="#" id="ear"><div class="earth-circle"></div>Earth<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
+          <a href="#" id="mar"><div class="mars-circle"></div>Mars<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
+          <a href="#" id="jup"><div class="jupiter-circle"></div>Jupiter<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
+          <a href="#" id="sat"><div class="saturn-circle"></div>Saturn<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
+          <a href="#" id="ura"><div class="uranus-circle"></div>Uranus<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
+          <a href="#" id="nep"><div class="neptune-circle"></div>Neptune<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
+        </div>
+      </div>
     </nav>
+
 
     <div class="navtab container container--pall flex flex-jc-sb flex-ai-c header_three">
         <span id="mercury_overview">Overview</span>
@@ -43,7 +57,7 @@
 
         <!-- Overview Content Start -->
       
-        <p class="container--pall" id="mercury_info" style="margin-bottom: 20px">
+        <p class="container--pall" id="mercury_info">
           Mercury is the smallest planet in the Solar System and the closest 
           to the Sun. Its orbit around the Sun takes 87.97 Earth days, the 
           shortest of all the Sun's planets. Mercury is one of four terrestrial 
@@ -54,16 +68,16 @@
     </div>
 
     <div class="planet__stats container--pall">
-      <div class="planet__rotation flex flex-jc-sb flex-ai-c"><span class="header_three">Rotation time</span><span class="h2__mobile">58.6 DAYS</span></div>
-      <div class="planet__revolution flex flex-jc-sb flex-ai-c"><span class="header_three">Revolution time</span><span class="h2__mobile">87.97 DAYS</span></div>
-      <div class="planet__radius flex flex-jc-sb flex-ai-c"><span class="header_three">Radius</span><span class="h2__mobile">2,439.7 KM</span></div>
-      <div class="planet__temp flex flex-jc-sb flex-ai-c"><span class="header_three">Average Temp.</span><span class="h2__mobile">430 oC</span></div>
+      <div class="planet__rotation flex flex-jc-sb flex-ai-c"><span class="header_three">Rotation time</span><span class="planets__statsvalue h2__mobile">58.6 DAYS</span></div>
+      <div class="planet__revolution flex flex-jc-sb flex-ai-c"><span class="header_three">Revolution time</span><span class="planets__statsvalue h2__mobile">87.97 DAYS</span></div>
+      <div class="planet__radius flex flex-jc-sb flex-ai-c"><span class="header_three">Radius</span><span class="planets__statsvalue h2__mobile">2,439.7 KM</span></div>
+      <div class="planet__temp flex flex-jc-sb flex-ai-c"><span class="header_three">Average Temp.</span><span class="planets__statsvalue h2__mobile">430°C</span></div>
     </div>
     
   
   </div>
   </section>
-
+  <script src="app/js/nav.js"></script>
   <script src="app/js/script.js"></script>
 </body>
 </html>

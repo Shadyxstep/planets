@@ -21,6 +21,7 @@
         font-weight: 400;
     }
 
+
     &__menu {
         
     > span {
@@ -34,6 +35,8 @@
         }
        }
     }
+
+
 
     .navtab {
         height: 68px;
@@ -53,5 +56,72 @@
             }
         }
     }
+
+    .overlay {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 69px;
+        left: 100%;
+        background-color: $violet;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .overlay-content {
+        display: table;
+        position: relative;
+        width: 100%;
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-family: 'Spartan', sans-serif;
+    }
+
+    .overlay a {
+        opacity: 0;
+        height: 66px;
+        line-height: 66px;
+        text-decoration: none;
+        font-size: 15px;
+        color: $white;
+        display: block;
+        transition: 0.3s;
+        border-bottom: solid 1px grey;
+
+        > span {
+            opacity: 0;
+            position: absolute;
+            right: 10%;
+
+            > img {
+                height: 10px;
+                width: 10px;
+            }
+        }
+    }
+
+    .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+        transform: scale(1.0125);
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 8px;
+        right: 15px;
+        font-size: 40px;
+      }
+      
+      @media screen and (max-height: 450px) {
+        .overlay a {font-size: 20px}
+        .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+        }
+      }
+
 }
 

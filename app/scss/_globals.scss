@@ -111,6 +111,80 @@ h4 {
 }
 
 
+// Nav Circles
+
+.mercury-circle {
+    height: 20px;
+    width: 20px;
+    background: #DEF4FC;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.venus-circle {
+    height: 20px;
+    width: 20px;
+    background: #F7CC7F;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.earth-circle {
+    height: 20px;
+    width: 20px;
+    background: #545BFE;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.mars-circle {
+    height: 20px;
+    width: 20px;
+    background: #FF6A45;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.jupiter-circle {
+    height: 20px;
+    width: 20px;
+    background: #ECAD7A;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.saturn-circle {
+    height: 20px;
+    width: 20px;
+    background: #FCCB6B;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.uranus-circle {
+    height: 20px;
+    width: 20px;
+    background: #65F0D5;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.neptune-circle {
+    height: 20px;
+    width: 20px;
+    background: #497EFA;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 20px;
+}
+
 // HELPERS
 
 // Container
@@ -122,9 +196,14 @@ h4 {
     // Padding All
 
     &--pall {
-        padding-top: 1.625rem;
+        padding-top: 1.225rem;
         padding-right: 1rem;
-        padding-bottom: 1.625rem;
+        padding-bottom: 1.225rem;
+        padding-left: 1rem;
+    }
+
+    &--plr {
+        padding-right: 1rem;
         padding-left: 1rem;
     }
 }
@@ -145,6 +224,10 @@ h4 {
     &-ai-c {
         align-items: center;
     }
+
+    &-ai-l {
+        align-items: left;
+    }
 }
 
 // Hide
@@ -152,6 +235,7 @@ h4 {
 .hidden {
     display: none;
 }
+
 
 // ---------- //
 // Animations //
@@ -217,5 +301,23 @@ h4 {
     }
     to {
         opacity: 1;
+    }
+}
+
+
+// Slide In
+
+.slide-in {
+    animation: slidein 1s;
+}
+
+@keyframes slidein {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity:1;
+        transform: translateX(0);
     }
 }
