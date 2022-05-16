@@ -5,59 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app/scss/style.css">
   
-  <title>Frontend Mentor | Planets fact site</title>
+  <title>Venus | The Planets</title>
 </head>
 <body>
-  Venus
+  <!-- Nav Bar -->
 
-  <!-- Overview Content Start -->
+  <header class="header">
+    <nav class="container container--plr flex flex-jc-sb flex-ai-c">
+      <span class="h2__mobile">The Planets</span>
 
-  Venus is the second planet from the Sun. It is named after the 
-  Roman goddess of love and beauty. As the brightest natural object 
-  in Earth's night sky after the Moon, Venus can cast shadows and 
-  can be, on rare occasions, visible to the naked eye in broad daylight.
+      <div id="btnHamburger" class="header__menu" onclick="openNav();">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Venus -->
+      <div id="mobileNav" class="overlay">
+        <div class="overlay-content">
+          <a href="index.html" id="mer"><div class="mercury-circle"></div>Mercury<span class="icon-chev" id="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>      
+          <a href="venus.html" id="ven"><div class="venus-circle"></div>Venus<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
+          <a href="earth.html" id="ear"><div class="earth-circle"></div>Earth<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
+          <a href="mars.html" id="mar"><div class="mars-circle"></div>Mars<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
+          <a href="jupiter.html" id="jup"><div class="jupiter-circle"></div>Jupiter<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
+          <a href="saturn.html" id="sat"><div class="saturn-circle"></div>Saturn<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
+          <a href="uranus.html" id="ura"><div class="uranus-circle"></div>Uranus<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
+          <a href="neptune.html" id="nep"><div class="neptune-circle"></div>Neptune<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
+        </div>
+      </div>
+    </nav>
 
-  <!-- Overview Content End -->
 
-  <!-- Internal Structure Content Start -->
+    <div class="navtab container container--pall flex flex-jc-sb flex-ai-c header_three">
+        <span id="venus_overview">Overview</span>
+        <span id="venus_structure">Structure</span>
+        <span id="venus_surface">Surface</span>
+      </a>
+    </siv>
+  </header>
 
-  The similarity in size and density between Venus and Earth suggests 
-  they share a similar internal structure: a core, mantle, and crust. 
-  Like that of Earth, Venusian core is most likely at least partially 
-  liquid because the two planets have been cooling at about the same rate.
+  <section class="planet">
+    <div class="container">
+      <div class="venus__image" id="venus_image"></div>
+      <div class="venus__surface hidden" id="surface"></div>
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Venus#Internal_structure -->
+      <div class="planet__about">
+        <h2 id="venus_title">Venus</h2>
 
-  <!-- Internal Structure Content End -->
+        <!-- Overview Content Start -->
+      
+        <p class="container--pall" id="venus_info">
+          Venus is the second planet from the Sun. 
+          It is named after the Roman goddess of love and beauty. 
+          As the brightest natural object in Earth's night sky after the Moon, 
+          Venus can cast shadows and can be, on rare occasions, visible to the naked eye in broad daylight.
+        </p>
 
-  <!-- Surface Geology Content Start -->
+        Source: <a href="https://en.wikipedia.org/wiki/Earth_(planet)" style="text-decoration: none; color:#fff; border-bottom: 1px solid white;">Wikipedia</a><!-- URL: https://en.wikipedia.org/wiki/Mercury_(planet) -->
+    </div>
 
-  Much of the Venusian surface appears to have been shaped by volcanic activity. 
-  Venus has several times as many volcanoes as Earth, and it has 167 large 
-  volcanoes that are over 100 km (60 mi) across. The only volcanic complex 
-  of this size on Earth is the Big Island of Hawaii.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Venus#Surface_geology -->
-
-  <!-- Surface Geology Content End -->
-
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
-
-  Rotation Time
-  243 Days
-
-  Revolution Time
-  224.7 Days
-
-  Radius
-  6,051.8 KM
-
-  Average Temp.
-  471°c
+    <div class="planet__stats container--pall">
+      <div class="planet__rotation flex flex-jc-sb flex-ai-c"><span class="header_three">Rotation time</span><span id="venus_rotation" class="planets__statsvalue h2__mobile"></span></div>
+      <div class="planet__revolution flex flex-jc-sb flex-ai-c"><span class="header_three">Revolution time</span><span id="venus_revolution" class="planets__statsvalue h2__mobile"></span></div>
+      <div class="planet__radius flex flex-jc-sb flex-ai-c"><span class="header_three">Radius</span><span id="venus_radius" class="planets__statsvalue h2__mobile"></span></div>
+      <div class="planet__temp flex flex-jc-sb flex-ai-c"><span class="header_three">Average Temp.</span><span id="venus_temp" class="planets__statsvalue h2__mobile"></span></div>
+    </div>
+    
+  
+  </div>
+  </section>
+  <script src="app/js/nav.js"></script>
+  <script src="app/js/venus.js"></script>
 </body>
 </html>

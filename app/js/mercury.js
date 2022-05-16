@@ -8,6 +8,11 @@ const mercury_surface = document.getElementById('mercury_surface');
 const mercury_geology = document.getElementById('surface');
 const mercury_title = document.getElementById('mercury_title');
 
+const mercury_rotation = document.getElementById('mercury_rotation');
+const mercury_revolution = document.getElementById('mercury_revolution');
+const mercury_radius = document.getElementById('mercury_radius');
+const mercury_temp = document.getElementById('mercury_temp');
+
 
 // Mercury Object Data
 
@@ -35,6 +40,11 @@ const mercury_data =  {
       "geology": "./assets/geology-mercury.png"
     }
   };
+
+mercury_rotation.innerHTML = mercury_data.rotation;
+mercury_revolution.innerHTML = mercury_data.revolution;
+mercury_radius.innerHTML = mercury_data.radius;
+mercury_temp.innerHTML = mercury_data.temperature;
 
 // Event Listeners
 

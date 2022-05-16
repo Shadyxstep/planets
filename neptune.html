@@ -5,57 +5,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app/scss/style.css">
   
-  <title>Frontend Mentor | Planets fact site</title>
+  <title>Uranus | The Planets</title>
 </head>
 <body>
-  Neptune
+  <!-- Nav Bar -->
 
-  <!-- Overview Content Start -->
+  <header class="header">
+    <nav class="container container--plr flex flex-jc-sb flex-ai-c">
+      <span class="h2__mobile">The Planets</span>
 
-  Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar 
-  System, it is the fourth-largest planet by diameter, the third-most-massive planet, 
-  and the densest giant planet. It is 17 times the mass of Earth, more massive than 
-  its near-twin Uranus.
+      <div id="btnHamburger" class="header__menu" onclick="openNav();">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Neptune -->
+      <div id="mobileNav" class="overlay">
+        <div class="overlay-content">
+          <a href="index.html" id="mer"><div class="mercury-circle"></div>Mercury<span class="icon-chev" id="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>      
+          <a href="venus.html" id="ven"><div class="venus-circle"></div>Venus<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
+          <a href="earth.html" id="ear"><div class="earth-circle"></div>Earth<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
+          <a href="mars.html" id="mar"><div class="mars-circle"></div>Mars<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
+          <a href="jupiter.html" id="jup"><div class="jupiter-circle"></div>Jupiter<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
+          <a href="saturn.html" id="sat"><div class="saturn-circle"></div>Saturn<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
+          <a href="uranus.html" id="ura"><div class="uranus-circle"></div>Uranus<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
+          <a href="neptune.html" id="nep"><div class="neptune-circle"></div>Neptune<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
+        </div>
+      </div>
+    </nav>
 
-  <!-- Overview Content End -->
 
-  <!-- Internal Structure Content Start -->
+    <div class="navtab container container--pall flex flex-jc-sb flex-ai-c header_three">
+        <span id="neptune_overview">Overview</span>
+        <span id="neptune_structure">Structure</span>
+        <span id="neptune_surface">Surface</span>
+      </a>
+    </siv>
+  </header>
 
-  Neptune's internal structure resembles that of Uranus. Its atmosphere forms about 5% 
-  to 10% of its mass and extends perhaps 10% to 20% of the way towards the core. 
-  Increasing concentrations of methane, ammonia and water are found in the lower regions.
+  <section class="planet">
+    <div class="container">
+      <div class="neptune__image" id="neptune_image"></div>
+      <div class="neptune__surface hidden" id="surface"></div>
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Neptune#Internal_structure -->
+      <div class="planet__about">
+        <h2 id="neptune_title">Neptune</h2>
 
-  <!-- Internal Structure Content End -->
+        <!-- Overview Content Start -->
+      
+        <p class="container--pall" id="neptune_info">
+          Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, more massive than its near-twin Uranus.
+        </p>
 
-  <!-- Surface Geology Content Start -->
+        Source: <a href="https://en.wikipedia.org/wiki/Mars_(planet)" style="text-decoration: none; color:#fff; border-bottom: 1px solid white;">Wikipedia</a><!-- URL: https://en.wikipedia.org/wiki/Mercury_(planet) -->
+    </div>
 
-  Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is also 
-  present. Prominent absorption bands of methane exist at wavelengths above 600 nm, in 
-  the red and infrared portion of the spectrum.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Neptune#Atmosphere -->
-
-  <!-- Surface Geology Content End -->
-
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
-
-  Rotation Time
-  16.08 Hours
-
-  Revolution Time
-  164.79 Years
-
-  Radius
-  24,622 KM
-
-  Average Temp.
-  -201°c
+    <div class="planet__stats container--pall">
+      <div class="planet__rotation flex flex-jc-sb flex-ai-c"><span class="header_three">Rotation time</span><span id="neptune_rotation" class="planets__statsvalue h2__mobile"></span></div>
+      <div class="planet__revolution flex flex-jc-sb flex-ai-c"><span class="header_three">Revolution time</span><span id="neptune_revolution" class="planets__statsvalue h2__mobile"></span></div>
+      <div class="planet__radius flex flex-jc-sb flex-ai-c"><span class="header_three">Radius</span><span id="neptune_radius" class="planets__statsvalue h2__mobile"></span></div>
+      <div class="planet__temp flex flex-jc-sb flex-ai-c"><span class="header_three">Average Temp.</span><span id="neptune_temp" class="planets__statsvalue h2__mobile"></span></div>
+    </div>
+    
+  
+  </div>
+  </section>
+  <script src="app/js/nav.js"></script>
+  <script src="app/js/neptune.js"></script>
 </body>
 </html>

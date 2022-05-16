@@ -1,0 +1,66 @@
+.earth {     
+
+    &__image {
+
+        display: block;
+        margin: auto;
+        position: relative;
+        background: url('/assets/planet-earth.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 131px;
+        width: 131px;
+        margin-top: 5.938rem;
+        margin-bottom: 5.313rem;
+    }
+
+    &__structure {
+        display: block;
+        margin: auto;
+        position: relative;
+        background: url('../../assets/planet-earth-internal.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 131px;
+        width: 131px;
+        margin-top: 5.938rem;
+        margin-bottom: 5.313rem;
+    }
+
+    &__surface {
+        margin: auto;
+        position: relative;
+        background: url('../../assets/geology-earth.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 100px;
+        width: 100px;
+        margin-top: -8.313rem;
+    }
+
+    &__about {
+        text-align: center;
+    }
+
+    &__stats {
+        color: $lightGray;
+    }
+
+    .planets__statsvalue {
+        color: $white;
+    }
+
+
+    &__rotation, 
+    &__revolution,
+    &__radius,
+    &__temp {
+        padding: 16px 24px 16px 24px;
+        border: 1px solid $darkGray;
+        margin-bottom: 8px;
+    }
+
+}

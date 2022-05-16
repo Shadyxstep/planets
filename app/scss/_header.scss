@@ -43,6 +43,7 @@
         -moz-transition: .25s ease-in-out;
         -o-transition: .25s ease-in-out;
         transition: .25s ease-in-out;
+        cursor: pointer;
         
 
         &:not(:last-child){

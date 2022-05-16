@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="app/scss/style.css">
   
-  <title>Planets</title>
+  <title>Mercury | The Planets</title>
 </head>
 <body>
 
@@ -26,14 +26,14 @@
 
       <div id="mobileNav" class="overlay">
         <div class="overlay-content">
-          <a href="#" id="mer"><div class="mercury-circle"></div>Mercury<span class="icon-chev" id="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>      
-          <a href="#" id="ven"><div class="venus-circle"></div>Venus<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
-          <a href="#" id="ear"><div class="earth-circle"></div>Earth<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
-          <a href="#" id="mar"><div class="mars-circle"></div>Mars<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
-          <a href="#" id="jup"><div class="jupiter-circle"></div>Jupiter<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
-          <a href="#" id="sat"><div class="saturn-circle"></div>Saturn<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
-          <a href="#" id="ura"><div class="uranus-circle"></div>Uranus<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
-          <a href="#" id="nep"><div class="neptune-circle"></div>Neptune<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
+          <a href="index.html" id="mer"><div class="mercury-circle"></div>Mercury<span class="icon-chev" id="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>      
+          <a href="venus.html" id="ven"><div class="venus-circle"></div>Venus<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
+          <a href="earth.html" id="ear"><div class="earth-circle"></div>Earth<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
+          <a href="mars.html" id="mar"><div class="mars-circle"></div>Mars<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
+          <a href="jupiter.html" id="jup"><div class="jupiter-circle"></div>Jupiter<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
+          <a href="saturn.html" id="sat"><div class="saturn-circle"></div>Saturn<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
+          <a href="uranus.html" id="ura"><div class="uranus-circle"></div>Uranus<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
+          <a href="neptune.html" id="nep"><div class="neptune-circle"></div>Neptune<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
         </div>
       </div>
     </nav>
@@ -68,16 +68,16 @@
     </div>
 
     <div class="planet__stats container--pall">
-      <div class="planet__rotation flex flex-jc-sb flex-ai-c"><span class="header_three">Rotation time</span><span class="planets__statsvalue h2__mobile">58.6 DAYS</span></div>
-      <div class="planet__revolution flex flex-jc-sb flex-ai-c"><span class="header_three">Revolution time</span><span class="planets__statsvalue h2__mobile">87.97 DAYS</span></div>
-      <div class="planet__radius flex flex-jc-sb flex-ai-c"><span class="header_three">Radius</span><span class="planets__statsvalue h2__mobile">2,439.7 KM</span></div>
-      <div class="planet__temp flex flex-jc-sb flex-ai-c"><span class="header_three">Average Temp.</span><span class="planets__statsvalue h2__mobile">430°C</span></div>
+      <div class="planet__rotation flex flex-jc-sb flex-ai-c"><span class="header_three">Rotation time</span><span id="mercury_rotation" class="planets__statsvalue h2__mobile"></span></div>
+      <div class="planet__revolution flex flex-jc-sb flex-ai-c"><span class="header_three">Revolution time</span><span id="mercury_revolution" class="planets__statsvalue h2__mobile"></span></div>
+      <div class="planet__radius flex flex-jc-sb flex-ai-c"><span class="header_three">Radius</span><span id="mercury_radius" class="planets__statsvalue h2__mobile"></span></div>
+      <div class="planet__temp flex flex-jc-sb flex-ai-c"><span class="header_three">Average Temp.</span><span id="mercury_temp" class="planets__statsvalue h2__mobile"></span></div>
     </div>
     
   
   </div>
   </section>
   <script src="app/js/nav.js"></script>
-  <script src="app/js/script.js"></script>
+  <script src="app/js/mercury.js"></script>
 </body>
 </html>

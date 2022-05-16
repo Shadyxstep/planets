@@ -5,59 +5,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app/scss/style.css">
   
-  <title>Frontend Mentor | Planets fact site</title>
+  <title>Earth | The Planets</title>
 </head>
 <body>
-  Earth
+  <!-- Nav Bar -->
 
-  <!-- Overview Content Start -->
+  <header class="header">
+    <nav class="container container--plr flex flex-jc-sb flex-ai-c">
+      <span class="h2__mobile">The Planets</span>
 
-  Third planet from the Sun and the only known planet to harbor life. 
-  About 29.2% of Earth's surface is land with remaining 70.8% is 
-  covered with water. Earth's distance from the Sun, physical properties 
-  and geological history have allowed life to evolve and thrive.
+      <div id="btnHamburger" class="header__menu" onclick="openNav();">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Earth -->
+      <div id="mobileNav" class="overlay">
+        <div class="overlay-content">
+          <a href="index.html" id="mer"><div class="mercury-circle"></div>Mercury<span class="icon-chev" id="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>      
+          <a href="venus.html" id="ven"><div class="venus-circle"></div>Venus<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
+          <a href="earth.html" id="ear"><div class="earth-circle"></div>Earth<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
+          <a href="mars.html" id="mar"><div class="mars-circle"></div>Mars<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
+          <a href="jupiter.html" id="jup"><div class="jupiter-circle"></div>Jupiter<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
+          <a href="saturn.html" id="sat"><div class="saturn-circle"></div>Saturn<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
+          <a href="uranus.html" id="ura"><div class="uranus-circle"></div>Uranus<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
+          <a href="neptune.html" id="nep"><div class="neptune-circle"></div>Neptune<span class="icon-chev"><img src="assets/icon-chevron.svg"/></span></a>
+        </div>
+      </div>
+    </nav>
 
-  <!-- Overview Content End -->
 
-  <!-- Internal Structure Content Start -->
+    <div class="navtab container container--pall flex flex-jc-sb flex-ai-c header_three">
+        <span id="earth_overview">Overview</span>
+        <span id="earth_structure">Structure</span>
+        <span id="earth_surface">Surface</span>
+      </a>
+    </siv>
+  </header>
 
-  Earth's interior, like that of the other terrestrial planets, is divided 
-  into layers by their chemical or physical (rheological) properties. The 
-  outer layer is a chemically distinct silicate solid crust, which is 
-  underlain by a highly viscous solid mantle.
+  <section class="planet">
+    <div class="container">
+      <div class="earth__image" id="earth_image"></div>
+      <div class="earth__surface hidden" id="surface"></div>
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Earth#Internal_structure -->
+      <div class="planet__about">
+        <h2 id="earth_title">Earth</h2>
 
-  <!-- Internal Structure Content End -->
+        <!-- Overview Content Start -->
+      
+        <p class="container--pall" id="earth_info">
+          Third planet from the Sun and the only known planet to harbor life. About 29.2% of Earth's surface is land with remaining 70.8% is covered with water. Earth's distance from the Sun, physical properties and geological history have allowed life to evolve and thrive.
+        </p>
 
-  <!-- Surface Geology Content Start -->
+        Source: <a href="https://en.wikipedia.org/wiki/Earth_(planet)" style="text-decoration: none; color:#fff; border-bottom: 1px solid white;">Wikipedia</a><!-- URL: https://en.wikipedia.org/wiki/Mercury_(planet) -->
+    </div>
 
-  The total surface area of Earth is about 510 million km2. The continental 
-  crust consists of lower density material such as the igneous rocks granite 
-  and andesite. Less common is basalt, a denser volcanic rock that is the 
-  primary constituent of the ocean floors.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Earth#Surface -->
-
-  <!-- Surface Geology Content End -->
-
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
-
-  Rotation Time
-  0.99 Days
-
-  Revolution Time
-  365.26 Days
-
-  Radius
-  6,371 KM
-
-  Average Temp.
-  16°c
+    <div class="planet__stats container--pall">
+      <div class="planet__rotation flex flex-jc-sb flex-ai-c"><span class="header_three">Rotation time</span><span id="earth_rotation" class="planets__statsvalue h2__mobile"></span></div>
+      <div class="planet__revolution flex flex-jc-sb flex-ai-c"><span class="header_three">Revolution time</span><span id="earth_revolution" class="planets__statsvalue h2__mobile"></span></div>
+      <div class="planet__radius flex flex-jc-sb flex-ai-c"><span class="header_three">Radius</span><span id="earth_radius" class="planets__statsvalue h2__mobile"></span></div>
+      <div class="planet__temp flex flex-jc-sb flex-ai-c"><span class="header_three">Average Temp.</span><span id="earth_temp" class="planets__statsvalue h2__mobile"></span></div>
+    </div>
+    
+  
+  </div>
+  </section>
+  <script src="app/js/nav.js"></script>
+  <script src="app/js/earth.js"></script>
 </body>
 </html>

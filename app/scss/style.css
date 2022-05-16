@@ -360,6 +360,7 @@ h4 {
   transform: rotate(0deg);
   -webkit-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
+  cursor: pointer;
 }
 
 .header__menu > span:not(:last-child) {
@@ -528,6 +529,412 @@ h4 {
 }
 
 .planet__rotation, .planet__revolution, .planet__radius, .planet__temp {
+  padding: 16px 24px 16px 24px;
+  border: 1px solid #38384f;
+  margin-bottom: 8px;
+}
+
+.earth__image {
+  display: block;
+  margin: auto;
+  position: relative;
+  background: url("/assets/planet-earth.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 131px;
+  width: 131px;
+  margin-top: 5.938rem;
+  margin-bottom: 5.313rem;
+}
+
+.earth__structure {
+  display: block;
+  margin: auto;
+  position: relative;
+  background: url("../../assets/planet-earth-internal.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 131px;
+  width: 131px;
+  margin-top: 5.938rem;
+  margin-bottom: 5.313rem;
+}
+
+.earth__surface {
+  margin: auto;
+  position: relative;
+  background: url("../../assets/geology-earth.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100px;
+  width: 100px;
+  margin-top: -8.313rem;
+}
+
+.earth__about {
+  text-align: center;
+}
+
+.earth__stats {
+  color: #838391;
+}
+
+.earth .planets__statsvalue {
+  color: white;
+}
+
+.earth__rotation, .earth__revolution, .earth__radius, .earth__temp {
+  padding: 16px 24px 16px 24px;
+  border: 1px solid #38384f;
+  margin-bottom: 8px;
+}
+
+.venus__image {
+  display: block;
+  margin: auto;
+  position: relative;
+  background: url("../../assets/planet-venus.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 131px;
+  width: 131px;
+  margin-top: 5.938rem;
+  margin-bottom: 5.313rem;
+}
+
+.venus__structure {
+  display: block;
+  margin: auto;
+  position: relative;
+  background: url("../../assets/planet-venus-internal.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 131px;
+  width: 131px;
+  margin-top: 5.938rem;
+  margin-bottom: 5.313rem;
+}
+
+.venus__surface {
+  margin: auto;
+  position: relative;
+  background: url("../../assets/geology-venus.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100px;
+  width: 100px;
+  margin-top: -8.313rem;
+}
+
+.venus__about {
+  text-align: center;
+}
+
+.venus__stats {
+  color: #838391;
+}
+
+.venus .planets__statsvalue {
+  color: white;
+}
+
+.venus__rotation, .venus__revolution, .venus__radius, .venus__temp {
+  padding: 16px 24px 16px 24px;
+  border: 1px solid #38384f;
+  margin-bottom: 8px;
+}
+
+.mars__image {
+  display: block;
+  margin: auto;
+  position: relative;
+  background: url("../../assets/planet-mars.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 131px;
+  width: 131px;
+  margin-top: 5.938rem;
+  margin-bottom: 5.313rem;
+}
+
+.mars__structure {
+  display: block;
+  margin: auto;
+  position: relative;
+  background: url("../../assets/planet-mars-internal.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 131px;
+  width: 131px;
+  margin-top: 5.938rem;
+  margin-bottom: 5.313rem;
+}
+
+.mars__surface {
+  margin: auto;
+  position: relative;
+  background: url("../../assets/geology-mars.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100px;
+  width: 100px;
+  margin-top: -8.313rem;
+}
+
+.mars__about {
+  text-align: center;
+}
+
+.mars__stats {
+  color: #838391;
+}
+
+.mars .planets__statsvalue {
+  color: white;
+}
+
+.mars__rotation, .mars__revolution, .mars__radius, .mars__temp {
+  padding: 16px 24px 16px 24px;
+  border: 1px solid #38384f;
+  margin-bottom: 8px;
+}
+
+.jupiter__image {
+  display: block;
+  margin: auto;
+  position: relative;
+  background: url("../../assets/planet-jupiter.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 131px;
+  width: 131px;
+  margin-top: 5.938rem;
+  margin-bottom: 5.313rem;
+}
+
+.jupiter__structure {
+  display: block;
+  margin: auto;
+  position: relative;
+  background: url("../../assets/planet-jupiter-internal.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 131px;
+  width: 131px;
+  margin-top: 5.938rem;
+  margin-bottom: 5.313rem;
+}
+
+.jupiter__surface {
+  margin: auto;
+  position: relative;
+  background: url("../../assets/geology-jupiter.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100px;
+  width: 100px;
+  margin-top: -8.313rem;
+}
+
+.jupiter__about {
+  text-align: center;
+}
+
+.jupiter__stats {
+  color: #838391;
+}
+
+.jupiter .planets__statsvalue {
+  color: white;
+}
+
+.jupiter__rotation, .jupiter__revolution, .jupiter__radius, .jupiter__temp {
+  padding: 16px 24px 16px 24px;
+  border: 1px solid #38384f;
+  margin-bottom: 8px;
+}
+
+.saturn__image {
+  display: block;
+  margin: auto;
+  position: relative;
+  background: url("/assets/planet-saturn.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 131px;
+  width: 131px;
+  margin-top: 5.938rem;
+  margin-bottom: 5.313rem;
+}
+
+.saturn__structure {
+  display: block;
+  margin: auto;
+  position: relative;
+  background: url("../../assets/planet-saturn-internal.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 131px;
+  width: 131px;
+  margin-top: 5.938rem;
+  margin-bottom: 5.313rem;
+}
+
+.saturn__surface {
+  margin: auto;
+  position: relative;
+  background: url("../../assets/geology-saturn.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100px;
+  width: 100px;
+  margin-top: -8.313rem;
+}
+
+.saturn__about {
+  text-align: center;
+}
+
+.saturn__stats {
+  color: #838391;
+}
+
+.saturn .planets__statsvalue {
+  color: white;
+}
+
+.saturn__rotation, .saturn__revolution, .saturn__radius, .saturn__temp {
+  padding: 16px 24px 16px 24px;
+  border: 1px solid #38384f;
+  margin-bottom: 8px;
+}
+
+.uranus__image {
+  display: block;
+  margin: auto;
+  position: relative;
+  background: url("../../assets/planet-uranus.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 131px;
+  width: 131px;
+  margin-top: 5.938rem;
+  margin-bottom: 5.313rem;
+}
+
+.uranus__structure {
+  display: block;
+  margin: auto;
+  position: relative;
+  background: url("../../assets/planet-uranus-internal.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 131px;
+  width: 131px;
+  margin-top: 5.938rem;
+  margin-bottom: 5.313rem;
+}
+
+.uranus__surface {
+  margin: auto;
+  position: relative;
+  background: url("../../assets/geology-uranus.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100px;
+  width: 100px;
+  margin-top: -8.313rem;
+}
+
+.uranus__about {
+  text-align: center;
+}
+
+.uranus__stats {
+  color: #838391;
+}
+
+.uranus .planets__statsvalue {
+  color: white;
+}
+
+.uranus__rotation, .uranus__revolution, .uranus__radius, .uranus__temp {
+  padding: 16px 24px 16px 24px;
+  border: 1px solid #38384f;
+  margin-bottom: 8px;
+}
+
+.neptune__image {
+  display: block;
+  margin: auto;
+  position: relative;
+  background: url("../../assets/planet-neptune.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 131px;
+  width: 131px;
+  margin-top: 5.938rem;
+  margin-bottom: 5.313rem;
+}
+
+.neptune__structure {
+  display: block;
+  margin: auto;
+  position: relative;
+  background: url("../../assets/planet-neptune-internal.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 131px;
+  width: 131px;
+  margin-top: 5.938rem;
+  margin-bottom: 5.313rem;
+}
+
+.neptune__surface {
+  margin: auto;
+  position: relative;
+  background: url("../../assets/geology-neptune.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100px;
+  width: 100px;
+  margin-top: -8.313rem;
+}
+
+.neptune__about {
+  text-align: center;
+}
+
+.neptune__stats {
+  color: #838391;
+}
+
+.neptune .planets__statsvalue {
+  color: white;
+}
+
+.neptune__rotation, .neptune__revolution, .neptune__radius, .neptune__temp {
   padding: 16px 24px 16px 24px;
   border: 1px solid #38384f;
   margin-bottom: 8px;
