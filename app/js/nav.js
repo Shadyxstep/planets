@@ -18,7 +18,6 @@ function openNav() {
     const ham = document.getElementById('btnHamburger');
 
     ham.classList.toggle('open');
-    console.log('deez noots')
 
     // Remove Func
 
