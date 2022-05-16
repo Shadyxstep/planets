@@ -13,7 +13,12 @@ function openNav() {
     const ura = document.getElementById('ura');
     const nep = document.getElementById('nep');
 
-    const icon = document.getElementsByClassName('icon-chev')
+    const icon = document.getElementsByClassName('icon-chev');
+
+    const ham = document.getElementById('btnHamburger');
+
+    ham.classList.toggle('open');
+    console.log('deez noots')
 
     // Remove Func
 
@@ -39,6 +44,8 @@ function openNav() {
             icon[i].style.opacity='0';
         }
     }
+
+    // Add Func
 
     function addItems() {
         mobileNav.style.left="0";
@@ -155,8 +162,7 @@ function openNav() {
                 icon[i].classList.add('slide-in');
                 icon[i].style.opacity='1';
             }
-           
-        }, "1100")
+        }, "1200")
 
     }
 }
