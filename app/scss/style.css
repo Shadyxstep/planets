@@ -538,7 +538,7 @@ h4 {
   display: block;
   margin: auto;
   position: relative;
-  background: url("/assets/planet-earth.svg");
+  background: url("../../assets/planet-earth.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
