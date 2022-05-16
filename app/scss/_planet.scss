@@ -5,7 +5,7 @@
         display: block;
         margin: auto;
         position: relative;
-        background-image: url('../assets/planet-mercury.svg');
+        background: url('../../assets/planet-mercury.svg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -19,7 +19,7 @@
         display: block;
         margin: auto;
         position: relative;
-        background-image: url('/assets/planet-mercury-internal.svg');
+        background: url('/assets/planet-mercury-internal.svg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -32,7 +32,7 @@
     &__surface {
         margin: auto;
         position: relative;
-        background-image: url('/assets/geology-mercury.png');
+        background: url('/assets/geology-mercury.png');
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center center;
